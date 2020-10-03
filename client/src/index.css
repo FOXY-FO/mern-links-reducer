@@ -17,3 +17,60 @@ input.yellow-input:focus {
   border-bottom: 1px solid #ffeb3b !important;
   box-shadow: 0 1px 0 0 #ffeb3b !important;
 }
+
+nav .sidenav-trigger {
+  margin: 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (min-width: 993px) {
+  .row .col.offset-back-l2 {
+    margin-right: 16.6666666667%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  nav .brand-logo {
+    font-size: 1.5rem;
+  }
+
+  .offset-back-m1 {
+    margin-right: 8.3333333333%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  nav .brand-logo {
+    left: auto;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .sm\:hide {
+    display: none;
+  }
+}

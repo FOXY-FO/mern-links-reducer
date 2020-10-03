@@ -46,8 +46,8 @@ const AuthPage: FC = () => {
 
   return (
     <div className="row">
-      <div className="col s6 offset-s3">
-        <h1>Short your link</h1>
+      <div className="col s12 m10 offset-m1 l8 offset-l2">
+        <h2>Shorten your link</h2>
 
         <div className="card blue darken-1">
           <div className="card-content white-text">
