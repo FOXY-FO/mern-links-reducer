@@ -1,5 +1,5 @@
 {
-  "port": 5000,
+  "port": 8080,
   "jwtSecret": "vlad mern",
   "mongoUri": "mongodb+srv://vlad:159753Cs@cluster0.nxapk.azure.mongodb.net/app?retryWrites=true&w=majority",
   "baseUrl": "http://localhost:5000"
