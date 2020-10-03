@@ -2,5 +2,5 @@
   "port": 80,
   "jwtSecret": "vlad mern",
   "mongoUri": "mongodb+srv://vlad:159753Cs@cluster0.nxapk.azure.mongodb.net/app?retryWrites=true&w=majority",
-  "baseUrl": "https://damp-headland-60046.herokuapp.com/"
+  "baseUrl": "https://damp-headland-60046.herokuapp.com"
 }
