@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === "production") {
   })
 }
 
-const PORT = process.env.PORT || config.get("port") || 8080
+// const PORT = process.env.PORT || config.get("port") || 8080
 
 async function start() {
   try {
@@ -29,8 +29,12 @@ async function start() {
       useUnifiedTopology: true,
       useCreateIndex: true,
     })
-    app.listen(PORT, () =>
-      console.log(`App has beed started on port ${PORT}...`)
+    app.listen(process.env.PORT || config.get("port") || 8080, () =>
+      console.log(
+        `App has beed started on port ${
+          process.env.PORT || config.get("port") || 8080
+        }...`
+      )
     )
   } catch (error) {
     console.log("Server Error", error.message)
