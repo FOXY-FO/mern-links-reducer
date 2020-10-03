@@ -15,12 +15,12 @@ if (process.env.NODE_ENV === "production") {
   // app.use("/", express.static(path.join(__dirname, "client", "build")))
   app.use(express.static("client/build"))
 
-  // app.get("*", (req, res) => {
-  //   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
-  // })
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+  })
 }
 
-// const PORT = process.env.PORT || config.get("port") || 8080
+const PORT = process.env.PORT || config.get("port") || 8080
 
 async function start() {
   try {
@@ -29,12 +29,8 @@ async function start() {
       useUnifiedTopology: true,
       useCreateIndex: true,
     })
-    app.listen(process.env.PORT || config.get("port") || 8080, () =>
-      console.log(
-        `App has beed started on port ${
-          process.env.PORT || config.get("port") || 8080
-        }...`
-      )
+    app.listen(PORT, () =>
+      console.log(`App has beed started on port ${PORT}...`)
     )
   } catch (error) {
     console.log("Server Error", error.message)
