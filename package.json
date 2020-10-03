@@ -16,6 +16,10 @@
     "mern",
     "react"
   ],
+  "engines": {
+    "node": "10.22.1",
+    "npm": "6.14.6"
+  },
   "author": "Vlad Balabkin <foxyfo1703@gmail.com>",
   "license": "ISC",
   "dependencies": {
